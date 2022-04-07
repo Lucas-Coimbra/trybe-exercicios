@@ -1,4 +1,4 @@
-const currentHour = 21;
+const currentHour = 3;
 let message = "";
 
 if (currentHour >= 22) {
@@ -18,4 +18,12 @@ else if (currentHour > 4 && currentHour < 11) {
 }
 else {
     console.log(message = "Quieta esse buraco negro aí");
+}
+
+let weekDay = "sábado";
+if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira") {
+    console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+}
+else {
+    console.log("FINALMENTE, descanso merecido UwU");
 }
