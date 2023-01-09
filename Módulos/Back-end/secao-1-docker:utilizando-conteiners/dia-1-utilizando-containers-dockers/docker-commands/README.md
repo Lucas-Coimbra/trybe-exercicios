@@ -1,0 +1,1 @@
+Aqui terão todos os comandos docker usados neste exercício

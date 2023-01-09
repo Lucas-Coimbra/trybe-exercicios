@@ -1,0 +1,37 @@
+-- Baixe a imagem utilizando a tag: stable-slim, que é uma versão reduzida da distribuição.
+
+docker pull debian:stable-slim
+
+-- Após baixar a imagem para seu computador local, crie e execute um contêiner no modo interativo
+ utilizando essa imagem como referência — não esqueça referenciar a tag.
+
+ docker container run -it debian:stable-slim
+
+ -- No terminal, você deve conseguir rodar o comando cat /etc/*-release, 
+ que vai retornar os dados da distribuição Debian que está sendo rodada dentro do contêiner(autoexplicativo).
+
+-- Encerre o terminal
+
+exit
+
+-- Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
+
+docker ps -a
+
+-- Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
+
+docker start <CONTAINER ID || NAMES>
+
+-- Retome o contêiner que foi criado anteriormente neste exercício.
+
+docker attach <CONTAINER ID || NAMES>
+
+-- Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner(autoexplicativo).
+
+-- Encerre o terminal.
+
+exit
+
+-- Remova somente o contêiner criado para esse exercício.
+
+docker container rm <CONTAINER ID || NAMES>
